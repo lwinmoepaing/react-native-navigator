@@ -5,9 +5,10 @@ const MealDetailScreen = (props) => {
 	return (
 		<View>
 			<Text> Meal Detail Screen </Text>
+			<Text> </Text>
 			<Button onPress={() => {
-				props.navigation.navigate('Category')
-			}} title="Go To First Category Screen" />
+				props.navigation.popToTop()
+			}} title="Move Reverse to Top of Most" />
 		</View>
 	)
 }

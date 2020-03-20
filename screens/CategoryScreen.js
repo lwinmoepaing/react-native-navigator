@@ -5,9 +5,11 @@ const CategoryScreen = (props) => {
 	return (
 		<View>
 			<Text> Category Screen </Text>
+			<Text> </Text>
 			<Button onPress={() => {
 				props.navigation.navigate('Meal')
 			}} title="Go To Meal Screen" />
+
 		</View>
 	)
 }
