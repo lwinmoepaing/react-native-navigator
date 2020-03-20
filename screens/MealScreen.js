@@ -3,7 +3,8 @@ import { View, Text, Button } from 'react-native'
 import { random } from '../util/helper'
 
 const MealScreen = (props) => {
-	const { id } = props.route.params
+	const id = props.route.params?.id
+
 	return (
 		<View>
 			<Text> Meal Screen { id }</Text>
@@ -14,7 +15,6 @@ const MealScreen = (props) => {
 			<Text> </Text>
 			<Button onPress={() => {
 				const params = {
-					id: random()
 				}
 				props.navigation.push('Meal', params)
 			}} title="Nested Meal Screen" />
