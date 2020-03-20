@@ -18,6 +18,9 @@ function Navigator() {
 					options={{
 						title: 'Meal Screen Modified'
 					}}
+					initialParams={{
+						id: 'Lwin'
+					}}
 				/>
 				<Stack.Screen
 					name="MealDetail"
