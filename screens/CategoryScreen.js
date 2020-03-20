@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Button } from 'react-native'
+import { random } from '../util/helper'
 
 const CategoryScreen = (props) => {
 	return (
@@ -7,7 +8,10 @@ const CategoryScreen = (props) => {
 			<Text> Category Screen </Text>
 			<Text> </Text>
 			<Button onPress={() => {
-				props.navigation.navigate('Meal')
+				const params = {
+					id: `${random()}--zz`
+				}
+				props.navigation.navigate('Meal', params)
 			}} title="Go To Meal Screen" />
 
 		</View>
